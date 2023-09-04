@@ -23,12 +23,14 @@ class MainGrid(GridLayout):
 
 class RollTable(pandas.DataFrame):
     def __init__(self, **kwargs):
-        self.__init__(**kwargs)
+        super().__init__(**kwargs)
+
 
 
 class RollScreen(Screen):
     def __init__(self, **kwargs):
         super().__init__( **kwargs)
+        rolltable1 = RollTable()
 
 class HomeScreen(Screen):
     def __init__(self, **kwargs):
